@@ -1,0 +1,99 @@
+body {
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 400px;
+  background-image: url("jungle.jpg");
+  background-size: cover;
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.human {
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  left: 1px;
+  transition: bottom 0.3s linear;
+  /* transition: left 0.3s linear; */
+}
+
+.stone {
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  right: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* animation-fill-mode: forwards; */
+}
+.bomb {
+  width: 60px;
+}
+.con {
+  width: 70px;
+}
+.missile {
+  width: 200px;
+}
+.ab {
+  animation: ani2 5s linear infinite;
+}
+
+@keyframes ani2 {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-1490px);
+    /* 650 */
+  }
+}
+.aerial {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+
+  right: -5px;
+  top: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: ani3 12s linear infinite;
+}
+
+.ad {
+  animation: ani3 12s linear infinite;
+}
+
+@keyframes ani3 {
+  from {
+    transform: translate(300px);
+  }
+  to {
+    transform: translateX(-1590px);
+    /* 650 */
+  }
+}
+.ground {
+  width: 80%;
+  height: 100px;
+  background-color: burlywood;
+  border-top: rgb(42, 83, 0) 10px solid;
+}
